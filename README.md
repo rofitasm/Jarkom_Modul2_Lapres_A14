@@ -33,7 +33,7 @@ Laporan Resmi Modul 2 Praktikum Jaringan Komputer
 ### Soal1
 1.  **Buat domain semerua14.pw dengan mengisikan konfigurasi di MALANG sbg berikut**
 
-> ![image](assets/1.png)
+> ![image](assets/1.PNG)
 
 -   Buat folder jarkom di dalam /etc/bind
 
@@ -41,32 +41,32 @@ Laporan Resmi Modul 2 Praktikum Jaringan Komputer
 
 -   Kemudian buka file semerua14.pw dan edit seperti gambar berikut
 
-> ![image](assets/2.png)
+> ![image](assets/2.PNG)
 >
 > Setelah di restart bind9 nya dan dicoba hasilnya,
 >
-> ![image](assets/pingsemeru.png)
+> ![image](assets/pingsemeru.PNG)
 
 #
 
 ### Soal2
 2.  **Buat  alias menggunakan CNAME untuk http://www.semerua14.pw sebagai berikut**
 
-> ![image](assets/2.png)
+> ![image](assets/2.PNG)
 >
 > Lalu hasilnya setelah di coba ping,
 >
-> ![image](assets/4.png)
+> ![image](assets/4.PNG)
 #
 
 ### Soal3
 3.  **Lalu untuk membuat subdomain http://penanjakan.semeruyyy.pw**
 
-> ![image](assets/2.png)
+> ![image](assets/2.PNG)
 >
 > Hasilnya test dengan ping, sebagai berikut
 >
-> ![image](assets/5.png)
+> ![image](assets/5.PNG)
 #
 
 ### Soal4
@@ -76,7 +76,7 @@ Laporan Resmi Modul 2 Praktikum Jaringan Komputer
 
 -   Lalu tambahkan konfigurasi berikut ke dalam file named.conf.local
 
-> ![image](assets/6.png)
+> ![image](assets/6.PNG)
 
 -   Copykan file db.local pada path /etc/bind ke dalam folder jarkom
     > yang baru saja dibuat dan ubah namanya menjadi
@@ -84,31 +84,31 @@ Laporan Resmi Modul 2 Praktikum Jaringan Komputer
 
 -   Edit file 73.151.10.in-addr.arpa menjadi seperti gambar di bawah ini
 
-> ![image](assets/7.png)
+> ![image](assets/7.PNG)
 >
 > Setelah itu restart Malang dan jika dicoba pada Gresik hasilnya,
 >
-> ![image](assets/ptrrecord.png)
+> ![image](assets/ptrrecord.PNG)
 
 ### Soal5
 5.  **Membuat DNS Server Slave pada MOJOKERTO**
 
 Edit file /etc/bind/named.conf.local dan sesuaikan dengan syntax berikut
 
-> ![image](assets/conf.localMalang.png)
+> ![image](assets/conf.localMalang.PNG)
 >
 > Kemudian buka file /etc/bind/named.conf.local pada MOJOKERTO dan
 > tambahkan syntax berikut:
 >
-> ![image](assets/conf.localMojo.png)
+> ![image](assets/conf.localMojo.PNG)
 
 Lalu untuk testing, pertama kita matikan MALANG
 
-> ![image](assets/stopMalang.png)
+> ![image](assets/stopMalang.PNG)
 >
 > Lalu setelah MALANG di matikan kita test dan hasilnya seperti berikut,
 >
-> ![image](assets/testDNSslave.png)
+> ![image](assets/testDNSslave.PNG)
 
 #
 
@@ -117,7 +117,7 @@ Lalu untuk testing, pertama kita matikan MALANG
 
 > Ubah pada MALANG dengan menambahkan subdomain baru,
 >
-> ![image](assets/2.png)
+> ![image](assets/2.PNG)
 
 -   Kemudian edit file /etc/bind/named.conf.options pada *MALANG*.
 
@@ -131,7 +131,7 @@ Lalu untuk testing, pertama kita matikan MALANG
     > allow-query{any;};
 
 -   Lalu edit file /etc/bind/named.conf.local menjadi seperti gambar di bawah:
-    > ![image](assets/conf.localMalang.png)
+    > ![image](assets/conf.localMalang.PNG)
 
 
 -   Kemudian buat direktori dengan nama delegasi lalu copy db.local ke
@@ -139,11 +139,11 @@ Lalu untuk testing, pertama kita matikan MALANG
 
 -   Kemudian edit file gunung.semerua14.pw menjadi seperti dibawah ini
 
-> ![image](assets/delegasi.png)
+> ![image](assets/delegasi.PNG)
 >
 > Lalu saat dicoba pada GRESIK hasilnya,
 >
-> ![image](assets/testdelegasi.png)
+> ![image](assets/testdelegasi.PNG)
 #
 
 ### Soal7
@@ -151,11 +151,11 @@ Lalu untuk testing, pertama kita matikan MALANG
 
 > Pada MOJOKERTO ditambahkan subdomain sebagai berikut,
 >
-> ![image](assets/delegasi.png)
+> ![image](assets/delegasi.PNG)
 >
 > Lalu jika kita coba di GRESIK hasilnya,
 >
-> ![image](assets/testsubnaik.png)
+> ![image](assets/testsubnaik.PNG)
 #
 
 ### Soal8
@@ -163,11 +163,11 @@ Lalu untuk testing, pertama kita matikan MALANG
 
 > Dengan menambahkan ServerName dan DocumentRoot
 >
-> ![image](assets/8.3.png)
+> ![image](assets/8.3.PNG)
 
 Lalu untuk melihat hasilnya dapat diakses dengan browser semerua14.pw
 
-> ![image](assets/8.4.png)
+> ![image](assets/8.4.PNG)
 #
 
 ### Soal9
@@ -177,15 +177,15 @@ Lalu untuk melihat hasilnya dapat diakses dengan browser semerua14.pw
 
 Lalu untuk semerua14.pw, AllowOverride None diganti AllowOverride All
 
-> ![image](assets/9.1.png)
+> ![image](assets/9.1.PNG)
 >
 > Lalu edit file .htaccess dan isikan seperti berikut
 >
-> ![image](assets/9.2.png)
+> ![image](assets/9.2.PNG)
 
 Lalu untuk melihat hasilnya tinggal di coba untuk semerua14.pw/home
 
-> ![image](assets/9.3.png)
+> ![image](assets/9.3.PNG)
 #
 
 ### Soal10
@@ -203,13 +203,13 @@ Lalu untuk melihat hasilnya tinggal di coba untuk semerua14.pw/home
 Lalu tambahkan ServerName dan DocumentRoot dengan
 penanjakan.semerua14.pw
 
-> ![image](assets/10.1.png)
+> ![image](assets/10.1.PNG)
 >
 > Lalu aktifkan a2ensite penanjakan
 >
 > Hasilnya jika dibuka penanjakan.semerua14.pw
 >
-> ![image](assets/10.2.png)
+> ![image](assets/10.2.PNG)
 #
 
 ### Soal11
@@ -221,15 +221,15 @@ penanjakan.semerua14.pw
 > Dan tambahkan Option -Indexes untuk directory
 > penanjakan.semerua14.pw/public/\*
 >
-> ![image](assets/11.1.png)
+> ![image](assets/11.1.PNG)
 
 Hasilnya saat mengakses penanjakan.semerua14.pw/public/
 
-> ![image](assets/8.4.png)
+> ![image](assets/8.4.PNG)
 
 Hasilnya saat mengakses penanjakan.semerua14.pw/public/css/
 
-> ![image](assets/11.2.png)
+> ![image](assets/11.2.PNG)
 #
 
 ### Soal12
@@ -237,13 +237,13 @@ Hasilnya saat mengakses penanjakan.semerua14.pw/public/css/
 
 > Dengan menambahkan ErrorDocument 404 /errors/404.html
 >
-> ![image](assets/12.1.png)
+> ![image](assets/12.1.PNG)
 >
 > Lalu apache di restart
 >
 > Hasilnya saat mengakses link yang tidak ada
 >
-> ![image](assets/12.2.png)
+> ![image](assets/12.2.PNG)
 #
 
 ### Soal13
@@ -251,7 +251,7 @@ Hasilnya saat mengakses penanjakan.semerua14.pw/public/css/
 
 > Dengan menambahkan Alias dengan memberinya alias "/js"
 >
-> ![image](assets/13.1.png)
+> ![image](assets/13.1.PNG)
 >
 > Lalu restart apache
 >
@@ -259,7 +259,7 @@ Hasilnya saat mengakses penanjakan.semerua14.pw/public/css/
 > *\*tidak lagi not found, karena folder javascript memang tidak bisa
 > diakses*
 >
-> ![image](assets/13.2.png)
+> ![image](assets/13.2.PNG)
 #
 
 ### Soal14
@@ -268,17 +268,17 @@ Hasilnya saat mengakses penanjakan.semerua14.pw/public/css/
 > Setting virtual host di port 8888, tambahkan server name dan document
 > root untuk naik.gunung.semerua14.pw
 >
-> ![image](assets/14.3.png)
+> ![image](assets/14.3.PNG)
 >
 > Lalu pada ports.conf Listen untuk port 8888
 >
-> ![image](assets/14.2.png)
+> ![image](assets/14.2.PNG)
 
 Lalu restart apache
 >
 > Lalu hasilnya jika mengakses naik.gunung.semerua14.pw:8888
 >
-> ![image](assets/14.4.png)
+> ![image](assets/14.4.PNG)
 #
 
 ### Soal15
@@ -287,21 +287,21 @@ Lalu restart apache
 > Membuat user "semeru" dan password "kuynaikgunung" dengan perintah
 > ``htpasswd -c /etc/apche2/.htpasswd semeru``
 >
-> ![image](assets/15.1.png)
+> ![image](assets/15.1.PNG)
 >
 > Lalu tambahkan Auth untuk directory naik.gunung.semerua14.pw
 >
-> ![image](assets/15.2.png)
+> ![image](assets/15.2.PNG)
 >
 > Lalu restart apache
 >
 > Hasilnya saat mengakses naik.gunung.semerua14.pw:8888
 >
-> ![image](assets/15.3.png)
+> ![image](assets/15.3.PNG)
 >
 > Setelah memsukkan username dan password yang sesuai
 >
-> ![image](assets/15.4.png)
+> ![image](assets/15.4.PNG)
 #
 
 ### Soal16
@@ -312,17 +312,17 @@ Lalu restart apache
 > Edit .htaccess default pada PROBOLINGGO untuk meredirect ip
 > PROBOLINGGO ke semerua14.pw
 >
-> ![image](assets/16.2.png)
+> ![image](assets/16.2.PNG)
 >
 > Ganti allowoverride none jadi all untuk directory /var/www/
 >
-> ![image](assets/16.1.png)
+> ![image](assets/16.1.PNG)
 >
 > Lalu restart apache
 >
 > Hasilnya saat mengakses 10.151.73.124
 >
-> ![image](assets/16.3.png)
+> ![image](assets/16.3.PNG)
 #
 
 ### Soal17
@@ -331,16 +331,16 @@ Lalu restart apache
 >
 > Edit file .htaccess sesuai berikut
 >
-> ![image](assets/17.2.png)
+> ![image](assets/17.2.PNG)
 >
 > Tambahkan AllowOverride All untuk directory penanjakan.semerua14.pw
 
-> ![image](assets/17.1.png)
+> ![image](assets/17.1.PNG)
 
 > Hasilnya semua akses file gambar yang mengandung "semeru" akan
 > diarahkan ke semeru.jpg
 >
-> ![image](assets/17.3.png)
+> ![image](assets/17.3.PNG)
 #
 
 ##  Hambatan Selama Pengerjaan
