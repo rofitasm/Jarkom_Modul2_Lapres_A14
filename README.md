@@ -223,10 +223,6 @@ penanjakan.semerua14.pw
 >
 > ![image](assets/11.1.PNG)
 
-Hasilnya saat mengakses penanjakan.semerua14.pw/public/
-
-> ![image](assets/8.4.PNG)
-
 Hasilnya saat mengakses penanjakan.semerua14.pw/public/css/
 
 > ![image](assets/11.2.PNG)
@@ -344,5 +340,5 @@ Lalu restart apache
 #
 
 ##  Hambatan Selama Pengerjaan
--   apt-get install dan ping keluar tiba-tiba baru bisa dilakukan ketika hari terakhir praktikum
+-   apt-get install dan ping ke jaingan luar tiba-tiba baru bisa dilakukan ketika hari terakhir praktikum
 -   sering nge lag, misalnya terkadang ketika pada putty di bash bye.sh seharusnya menutup semua UML secara otomatis, namun tidak terjadi apa-apa, sehingga harus di halt satu persatu
